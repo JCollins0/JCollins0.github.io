@@ -1,0 +1,23 @@
+---
+layout: post
+title:  "Week One"
+date:   2018-09-1 18:00:00 -0600
+categories: blog
+---
+![Jonathan]({{"/assets/jonathan.jpg" | absolute_url}}){:style="margin: 0 auto; display: block;"}
+
+
+<h3>What are my expectations of the class?</h3>
+
+
+<h3>What did I do this past week?</h3>
+
+<h3>What's in my way?</h3>
+
+
+<h3>What will I do next week?</h3>
+
+<h3>What's my experience with the class?</h3>
+
+
+<h3>What's my pick-of-the-week or tip-of-the-week?</h3>
