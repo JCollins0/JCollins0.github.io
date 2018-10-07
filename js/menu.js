@@ -25,7 +25,7 @@
 
     var url_elems = [action, name, date, locationNum, locationName, flags];
     var vars = url_elems.join('&');
-    var url = 'http://hf-food.austin.utexas.edu/foodpro/menuSamp2.asp?' + vars
+    var url = 'https://hf-food.austin.utexas.edu/foodpro/menuSamp2.asp?' + vars
     console.log(url)
 
     var xhr = new XMLHttpRequest();
