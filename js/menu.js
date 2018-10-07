@@ -35,7 +35,9 @@
             $('#menu').innerHtml = xhr.responseText;
         }
     }
+    xhr.setTimeout(function () {
 
+    }, 0);
     xhr.open('GET',url, true);
     xhr.setRequestHeader('Access-Control-Allow-Origin','*');
     xhr.setRequestHeader('Accept','text/html');
