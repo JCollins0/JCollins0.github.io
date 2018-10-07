@@ -29,6 +29,13 @@
     console.log(url)
 
     var xhr = new XMLHttpRequest();
+
+    xhr.onreadystatechange = function() {
+        if (xhr.readyState == XMLHttpRequest.DONE) {
+            $('#menu').innerHtml = xhr.responseText;
+        }
+    }
+
     xhr.open('GET',url);
     xhr.setRequestHeader('Access-Control-Allow-Origin','*');
     xhr.setRequestHeader('Accept','text/html');
