@@ -1,0 +1,25 @@
+.blog-footer {
+  display: flex;
+  flex-direction: column;
+  a {
+    margin-top: 20px;
+  }
+}
+
+header {
+  height: 50px;
+  width: auto;
+  border-bottom: 1px solid #e8e8e8;
+  padding: 10px;
+  max-width: calc(800px - (30px * 2));
+  margin: auto;
+  font-size: larger;
+}
+
+footer {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  padding-top: 10px;
+  height: 100px;
+}
