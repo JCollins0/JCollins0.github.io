@@ -23,7 +23,7 @@ export const BlogFooter: React.FC<BlogFooterProps> = ({
   return (
     <footer className="blog-footer">
       <Link to={to || ".."}>{backToText}</Link>
-      <a href="github.com/JCollins0">
+      <a href="https://github.com/JCollins0">
         <GithubIcon />
         JCollins0
       </a>
