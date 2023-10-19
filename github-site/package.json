@@ -36,6 +36,9 @@
     "extends": [
       "react-app",
       "react-app/jest"
+    ],
+    "ignorePatterns": [
+      "shared-topnav.js"
     ]
   },
   "browserslist": {

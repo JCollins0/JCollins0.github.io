@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { ReactComponent as GithubIcon } from "../../assets/images/github_logo.svg";
+import GitHubIcon from "@mui/icons-material/GitHub";
 import "./blogs-common.scss";
 
 type BlogHeaderProps = { title: string };
@@ -9,7 +9,7 @@ export const BlogHeader: React.FC<BlogHeaderProps> = ({
 }: BlogHeaderProps) => {
   return (
     <header>
-      <h2>{title}</h2>
+      <h2 style={{ margin: "0" }}>{title}</h2>
     </header>
   );
 };
@@ -24,7 +24,7 @@ export const BlogFooter: React.FC<BlogFooterProps> = ({
     <footer className="blog-footer">
       <Link to={to || ".."}>{backToText}</Link>
       <a href="https://github.com/JCollins0">
-        <GithubIcon />
+        <GitHubIcon />
         JCollins0
       </a>
     </footer>
