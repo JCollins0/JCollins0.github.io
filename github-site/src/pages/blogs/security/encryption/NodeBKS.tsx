@@ -79,23 +79,10 @@ const blogData: BlogPostData = [
     paragraph: (
       <p>
         I learnt a lot about the Bouncy Castle keystore format and how it works.
+        <br />
         Format:
         <br />
-        <code>keystore = keystore_header + keystore_body </code>
-      </p>
-    ),
-  },
-  {
-    id: 5,
-    heading: "What is the format of the keystore?",
-    paragraph: (
-      <p>
-        The keystore format is a binary format that consists of a header and a
-        body. The header contains information about the keystore, such as the
-        version, the algorithm used to encrypt the keystore, and the number of
-        entries in the keystore. The body contains the actual entries in the
-        keystore, which are encrypted using the algorithm specified in the
-        header.
+        <code>keystore = keystore_header + keystore_content + hmac </code>
       </p>
     ),
   },
