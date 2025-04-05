@@ -10,7 +10,7 @@ export const CS373BlogHome: React.FC = () => {
       <Route
         path="/"
         element={
-          <>
+          <div className="blogs-container">
             <BlogHeader title="CS373 Fall 2018" />
             <div className="wrapper">
               <h1>Blogs</h1>
@@ -26,7 +26,7 @@ export const CS373BlogHome: React.FC = () => {
               </ul>
             </div>
             <BlogFooter to={backToBlogsPath} backToText="Back to Blogs" />
-          </>
+          </div>
         }
       ></Route>
       <Route path="/*" element={<CS373Blogs></CS373Blogs>}></Route>

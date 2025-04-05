@@ -20,9 +20,8 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         }
       ></CardHeader>
       <CardContent>
-        <Typography>
-          <strong>Description</strong>
-          <br />
+        <Typography variant="h5">Description</Typography>
+        <Typography style={{ paddingLeft: "10px" }}>
           {props.description || "N/A"}
         </Typography>
         <Typography>

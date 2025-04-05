@@ -1,59 +1,56 @@
 @use "../../../assets/styles/utils.scss";
-
-main {
-  .content {
-    max-width: calc(800px - (30px * 2));
-    margin-right: auto;
-    margin-left: auto;
-    padding-left: 30px;
-    padding-right: 30px;
-    padding-bottom: 50px;
-    margin: auto;
-    padding-top: 20px;
-    font-size: large;
-
-    .my-image {
-      margin: auto;
-      display: flex;
-      margin-left: auto;
+.blogs-container {
+  main {
+    .content {
+      max-width: calc(800px - (30px * 2));
       margin-right: auto;
-      border: 2px solid black;
-      width: 300px;
-      border-radius: 50%;
-    }
+      margin-left: auto;
+      padding-left: 30px;
+      padding-right: 30px;
+      padding-bottom: 50px;
+      margin: auto;
+      padding-top: 20px;
+      font-size: large;
 
-    .heading {
-      font-weight: bold;
-    }
+      .my-image {
+        margin: auto;
+        display: flex;
+        margin-left: auto;
+        margin-right: auto;
+        border: 2px solid black;
+        width: 300px;
+        border-radius: 50%;
+      }
 
-    .paragraph {
-      padding: 0px 15px;
+      .heading {
+        font-weight: bold;
+      }
+
+      .paragraph {
+        padding: 0px 15px;
+      }
     }
   }
-}
 
-a {
-  text-decoration: none;
-  color: #2a7ae2;
-}
+  a {
+    text-decoration: none;
+    color: #2a7ae2;
+  }
 
-a:hover {
-  text-decoration: underline;
-}
+  a:hover {
+    text-decoration: underline;
+  }
 
-.fade-in {
-  opacity: 0;
-  -webkit-animation: fadeIn ease-in 1;
-  -moz-animation: fadeIn ease-in 1;
-  animation: fadeIn ease-in 1;
-  -webkit-animation-fill-mode: forwards;
-  -moz-animation-fill-mode: forwards;
-  animation-fill-mode: forwards;
-  -webkit-animation-duration: 0.5s;
-  -moz-animation-duration: 0.5s;
-  animation-duration: 0.5s;
-}
-
-* {
-  font-family: Corbel, sans-serif;
+  .fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-duration: 0.5s;
+  }
 }

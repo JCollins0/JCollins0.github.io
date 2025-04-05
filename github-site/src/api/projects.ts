@@ -1,51 +1,27 @@
-const projectData = [
+const projectData: Array<ProjectData> = [
+  {
+    name: "node-bks",
+    url: "https://github.com/JCollins0/node-bks",
+    created_at: "2025-04-05T00:04:13Z",
+    updated_at: "2025-04-05T00:05:24Z",
+    description: "Node.js BKS (Binary Key Store) library",
+    id: 123,
+  },
+  {
+    name: "test-web-components",
+    url: "https://github.com/JCollins0/test-web-components",
+    id: 707454411,
+    created_at: "2023-10-20T00:04:13Z",
+    updated_at: "2023-10-20T00:05:24Z",
+    description: "Sample web components repo",
+  },
   {
     name: "JCollins0.github.io",
     url: "https://github.com/JCollins0/JCollins0.github.io",
     id: 147035865,
-    updated_at: "2022-08-01T02:02:44Z",
+    updated_at: "2023-10-19T23:56:42Z",
     created_at: "2018-09-01T22:02:34Z",
     description: "Blog Site",
-  },
-  {
-    name: "yoink-or-share-game",
-    url: "https://github.com/JCollins0/yoink-or-share-game",
-    id: 394073814,
-    updated_at: "2022-04-10T02:46:39Z",
-    created_at: "2021-08-08T21:31:59Z",
-    description: "Webapp for Share Split game",
-  },
-  {
-    name: "UnitySharedGame",
-    url: "https://github.com/JCollins0/UnitySharedGame",
-    id: 442862826,
-    updated_at: "2022-01-11T02:40:31Z",
-    created_at: "2021-12-29T18:49:39Z",
-    description: null,
-  },
-  {
-    name: "waveformAnalyzer",
-    url: "https://github.com/JCollins0/waveformAnalyzer",
-    id: 416082867,
-    updated_at: "2021-10-11T20:52:59Z",
-    created_at: "2021-10-11T20:52:17Z",
-    description: null,
-  },
-  {
-    name: "PapasGameRemake",
-    url: "https://github.com/JCollins0/PapasGameRemake",
-    id: 223854293,
-    updated_at: "2020-03-08T00:59:17Z",
-    created_at: "2019-11-25T03:36:51Z",
-    description: null,
-  },
-  {
-    name: "HackTx2019",
-    url: "https://github.com/JCollins0/HackTx2019",
-    id: 219191137,
-    updated_at: "2019-11-03T06:20:13Z",
-    created_at: "2019-11-02T17:44:39Z",
-    description: "Hack Tx project 2019",
   },
   {
     name: "MenuProject",
@@ -56,15 +32,6 @@ const projectData = [
     description: null,
   },
   {
-    name: "LAFFPfC",
-    url: "https://github.com/JCollins0/LAFFPfC",
-    id: 147005162,
-    updated_at: "2018-09-01T14:28:36Z",
-    created_at: "2018-09-01T14:28:33Z",
-    description:
-      'Repository for the assignments in the Massive Open Online Course "LAFF-On Programming for Correctness"',
-  },
-  {
     name: "SudokuSolver",
     url: "https://github.com/JCollins0/SudokuSolver",
     id: 123519378,
@@ -72,22 +39,6 @@ const projectData = [
     created_at: "2018-03-02T02:28:41Z",
     description:
       "Fast Sudoku Solver that can solve any size puzzle using CLINGO",
-  },
-  {
-    name: "ProjectDevelopmentOrganizer",
-    url: "https://github.com/JCollins0/ProjectDevelopmentOrganizer",
-    id: 117498472,
-    updated_at: "2018-01-15T05:07:54Z",
-    created_at: "2018-01-15T04:48:20Z",
-    description: "Parses Excel Files from Clarity Reports for my dad",
-  },
-  {
-    name: "Simon",
-    url: "https://github.com/JCollins0/Simon",
-    id: 116314620,
-    updated_at: "2018-01-04T22:45:01Z",
-    created_at: "2018-01-04T22:39:51Z",
-    description: "Memory Game made in java",
   },
   {
     name: "C-Data-Structures",
@@ -106,14 +57,6 @@ const projectData = [
     description: null,
   },
   {
-    name: "Lines",
-    url: "https://github.com/JCollins0/Lines",
-    id: 68870235,
-    updated_at: "2016-09-22T00:55:16Z",
-    created_at: "2016-09-22T00:50:42Z",
-    description: null,
-  },
-  {
     name: "battlecastle",
     url: "https://github.com/JCollins0/battlecastle",
     id: 41376614,
@@ -121,17 +64,16 @@ const projectData = [
     created_at: "2015-08-25T17:03:45Z",
     description: null,
   },
-  {
-    name: "ExcelFileReader",
-    url: "https://github.com/JCollins0/ExcelFileReader",
-    id: 23158508,
-    updated_at: "2014-08-20T18:03:42Z",
-    created_at: "2014-08-20T18:00:18Z",
-    description: null,
-  },
 ];
 
-export type ProjectData = typeof projectData[0];
+export interface ProjectData {
+  name: string;
+  url: string;
+  id: number;
+  updated_at: string;
+  created_at: string;
+  description: string | null;
+}
 
 export const fetchProjects = async () => {
   return new Promise<Array<ProjectData>>((resolve) => resolve(projectData));

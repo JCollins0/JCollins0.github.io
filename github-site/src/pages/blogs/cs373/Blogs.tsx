@@ -107,7 +107,7 @@ export const cs373BlogData = [
 
 export const CS373Blogs: React.FC = () => {
   return (
-    <>
+    <div className="blogs-container">
       <Routes>
         {cs373BlogData.map((blogPage) => (
           <Route
@@ -135,6 +135,6 @@ export const CS373Blogs: React.FC = () => {
           ></Route>
         ))}
       </Routes>
-    </>
+    </div>
   );
 };
