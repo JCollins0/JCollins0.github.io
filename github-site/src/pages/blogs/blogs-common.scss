@@ -1,27 +1,79 @@
+@use "../../assets/styles/utils.scss";
+
 .blogs-container {
+  .content {
+    max-width: calc(800px - (30px * 2));
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 50px;
+    margin: auto;
+    padding-top: 20px;
+    font-size: large;
+
+    .my-image {
+      margin: auto;
+      display: flex;
+      margin-left: auto;
+      margin-right: auto;
+      border: 2px solid black;
+      width: 300px;
+      border-radius: 50%;
+    }
+
+    .heading {
+      font-weight: bold;
+    }
+
+    .paragraph {
+      padding: 0px 15px;
+    }
+  }
+
   .blog-footer {
     display: flex;
     flex-direction: column;
     a {
+      display: flex;
+      align-items: center;
+      margin: auto;
+      gap: 0.25rem;
       margin-top: 20px;
     }
   }
 
-  header {
-    height: 50px;
+  .blog-title {
     width: auto;
     border-bottom: 1px solid #e8e8e8;
-    padding: 10px;
+    padding: 0 1rem;
     max-width: calc(800px - (30px * 2));
     margin: auto;
     font-size: larger;
+
+    h1 {
+      margin: 0;
+    }
   }
 
   footer {
     margin-left: auto;
     margin-right: auto;
     text-align: center;
-    padding-top: 10px;
-    height: 100px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .fade-in {
+    opacity: 0;
+    -webkit-animation: fadeIn ease-in 1;
+    -moz-animation: fadeIn ease-in 1;
+    animation: fadeIn ease-in 1;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+    -webkit-animation-duration: 0.5s;
+    -moz-animation-duration: 0.5s;
+    animation-duration: 0.5s;
   }
 }

@@ -1,7 +1,9 @@
-export type BlogPostData = Array<{ heading: string; paragraph: JSX.Element }>;
+import { BlogPostData } from "../../../shared/components/BlogPost";
+
 export const blogPostDataMap = new Map<String, BlogPostData>();
 blogPostDataMap.set("week1", [
   {
+    id: 0,
     heading: "What are my expectations of the class?",
     paragraph: (
       <>
@@ -13,6 +15,7 @@ blogPostDataMap.set("week1", [
     ),
   },
   {
+    id: 1,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -25,6 +28,7 @@ blogPostDataMap.set("week1", [
     ),
   },
   {
+    id: 2,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -38,6 +42,7 @@ blogPostDataMap.set("week1", [
     ),
   },
   {
+    id: 3,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -51,6 +56,7 @@ blogPostDataMap.set("week1", [
     ),
   },
   {
+    id: 4,
     heading: "What's my experience with the class?",
     paragraph: (
       <>
@@ -63,6 +69,7 @@ blogPostDataMap.set("week1", [
     ),
   },
   {
+    id: 5,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -77,6 +84,7 @@ blogPostDataMap.set("week1", [
 
 blogPostDataMap.set("week2", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -90,6 +98,7 @@ blogPostDataMap.set("week2", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -108,6 +117,7 @@ blogPostDataMap.set("week2", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -120,6 +130,7 @@ blogPostDataMap.set("week2", [
     ),
   },
   {
+    id: 3,
     heading: "What's my experience with the class?",
     paragraph: (
       <>
@@ -132,6 +143,7 @@ blogPostDataMap.set("week2", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -149,6 +161,7 @@ blogPostDataMap.set("week2", [
 
 blogPostDataMap.set("week3", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -161,6 +174,7 @@ blogPostDataMap.set("week3", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -172,6 +186,7 @@ blogPostDataMap.set("week3", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -186,6 +201,7 @@ blogPostDataMap.set("week3", [
     ),
   },
   {
+    id: 3,
     heading: "What's my experience with the in class exercises?",
     paragraph: (
       <>
@@ -198,6 +214,7 @@ blogPostDataMap.set("week3", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -213,6 +230,7 @@ blogPostDataMap.set("week3", [
 
 blogPostDataMap.set("week4", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -226,6 +244,7 @@ blogPostDataMap.set("week4", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -239,6 +258,7 @@ blogPostDataMap.set("week4", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -252,6 +272,7 @@ blogPostDataMap.set("week4", [
     ),
   },
   {
+    id: 3,
     heading: "What was your experience of Project #1?",
     paragraph: (
       <>
@@ -266,6 +287,7 @@ blogPostDataMap.set("week4", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -283,6 +305,7 @@ blogPostDataMap.set("week4", [
 
 blogPostDataMap.set("week5", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -297,6 +320,7 @@ blogPostDataMap.set("week5", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -311,6 +335,7 @@ blogPostDataMap.set("week5", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -325,6 +350,7 @@ blogPostDataMap.set("week5", [
     ),
   },
   {
+    id: 3,
     heading: "What's your experience of the readings, so far?",
     paragraph: (
       <>
@@ -339,6 +365,7 @@ blogPostDataMap.set("week5", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -356,6 +383,7 @@ blogPostDataMap.set("week5", [
 
 blogPostDataMap.set("week6", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -368,6 +396,7 @@ blogPostDataMap.set("week6", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -384,6 +413,7 @@ blogPostDataMap.set("week6", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -397,6 +427,7 @@ blogPostDataMap.set("week6", [
     ),
   },
   {
+    id: 3,
     heading: "What was your experience of Project #2?",
     paragraph: (
       <>
@@ -412,6 +443,7 @@ blogPostDataMap.set("week6", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -430,6 +462,7 @@ blogPostDataMap.set("week6", [
 
 blogPostDataMap.set("week7", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -444,6 +477,7 @@ blogPostDataMap.set("week7", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -458,6 +492,7 @@ blogPostDataMap.set("week7", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -472,6 +507,7 @@ blogPostDataMap.set("week7", [
     ),
   },
   {
+    id: 3,
     heading: "What was your experience of learning the basics of Python?",
     paragraph: (
       <>
@@ -484,6 +520,7 @@ blogPostDataMap.set("week7", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -500,6 +537,7 @@ blogPostDataMap.set("week7", [
 
 blogPostDataMap.set("week8", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -513,6 +551,7 @@ blogPostDataMap.set("week8", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -529,6 +568,7 @@ blogPostDataMap.set("week8", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -541,6 +581,7 @@ blogPostDataMap.set("week8", [
     ),
   },
   {
+    id: 3,
     heading:
       "What was your experience of Test #1 (the problems, the time, HackerRank)",
     paragraph: (
@@ -554,6 +595,7 @@ blogPostDataMap.set("week8", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -568,6 +610,7 @@ blogPostDataMap.set("week8", [
 
 blogPostDataMap.set("week9", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -581,6 +624,7 @@ blogPostDataMap.set("week9", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -597,6 +641,7 @@ blogPostDataMap.set("week9", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -607,6 +652,7 @@ blogPostDataMap.set("week9", [
     ),
   },
   {
+    id: 3,
     heading: "What did you think of the talk by Dr. Rich and Dr. Cline?",
     paragraph: (
       <>
@@ -620,6 +666,7 @@ blogPostDataMap.set("week9", [
     ),
   },
   {
+    id: 4,
     heading: "If you went, what did you think of the talk by Atlassian?",
     paragraph: (
       <>
@@ -629,6 +676,7 @@ blogPostDataMap.set("week9", [
     ),
   },
   {
+    id: 5,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -645,6 +693,7 @@ blogPostDataMap.set("week9", [
 
 blogPostDataMap.set("week10", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -657,6 +706,7 @@ blogPostDataMap.set("week10", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -671,6 +721,7 @@ blogPostDataMap.set("week10", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -686,6 +737,7 @@ blogPostDataMap.set("week10", [
     ),
   },
   {
+    id: 3,
     heading: "What was your experience of Project #3?",
     paragraph: (
       <>
@@ -701,6 +753,7 @@ blogPostDataMap.set("week10", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -717,6 +770,7 @@ blogPostDataMap.set("week10", [
 
 blogPostDataMap.set("week11", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -732,6 +786,7 @@ blogPostDataMap.set("week11", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -748,6 +803,7 @@ blogPostDataMap.set("week11", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -764,6 +820,7 @@ blogPostDataMap.set("week11", [
     ),
   },
   {
+    id: 3,
     heading: "What was your experience in learning SQL?",
     paragraph: (
       <>
@@ -778,6 +835,7 @@ blogPostDataMap.set("week11", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -797,6 +855,7 @@ blogPostDataMap.set("week11", [
 
 blogPostDataMap.set("week12", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -810,6 +869,7 @@ blogPostDataMap.set("week12", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -828,6 +888,7 @@ blogPostDataMap.set("week12", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -840,6 +901,7 @@ blogPostDataMap.set("week12", [
     ),
   },
   {
+    id: 3,
     heading: "What was your experience of Project #4?",
     paragraph: (
       <>
@@ -852,6 +914,7 @@ blogPostDataMap.set("week12", [
     ),
   },
   {
+    id: 4,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -867,6 +930,7 @@ blogPostDataMap.set("week12", [
 
 blogPostDataMap.set("week13", [
   {
+    id: 0,
     heading: "What did I do this past week?",
     paragraph: (
       <>
@@ -882,6 +946,7 @@ blogPostDataMap.set("week13", [
     ),
   },
   {
+    id: 1,
     heading: "What's in my way?",
     paragraph: (
       <>
@@ -895,6 +960,7 @@ blogPostDataMap.set("week13", [
     ),
   },
   {
+    id: 2,
     heading: "What will I do next week?",
     paragraph: (
       <>
@@ -907,6 +973,7 @@ blogPostDataMap.set("week13", [
     ),
   },
   {
+    id: 3,
     heading: "If you went, what did you think of the talk by Google?",
     paragraph: (
       <>
@@ -919,6 +986,7 @@ blogPostDataMap.set("week13", [
     ),
   },
   {
+    id: 4,
     heading: "What was your experience of the refactoring topics?",
     paragraph: (
       <>
@@ -931,6 +999,7 @@ blogPostDataMap.set("week13", [
     ),
   },
   {
+    id: 5,
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
@@ -944,6 +1013,7 @@ blogPostDataMap.set("week13", [
 
 blogPostDataMap.set("final", [
   {
+    id: 0,
     heading: "What did you like the least about the class?",
     paragraph: (
       <>
@@ -956,6 +1026,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 1,
     heading: "What did you like the most about the class?",
     paragraph: (
       <>
@@ -969,6 +1040,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 2,
     heading: "What's the most significant thing you learned?",
     paragraph: (
       <>
@@ -982,6 +1054,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 3,
     heading:
       "How many hours a week did you spend coding/debugging/testing for this class?",
     paragraph: (
@@ -995,6 +1068,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 4,
     heading:
       "How many hours a week did you spend reading/studying for this class?",
     paragraph: (
@@ -1007,6 +1081,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 5,
     heading: "How many lines of code do you think you wrote?",
     paragraph: (
       <>
@@ -1016,6 +1091,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 6,
     heading: "What required tool did you not know and now find very useful?",
     paragraph: (
       <>
@@ -1025,6 +1101,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 7,
     heading:
       "What's the most useful Web dev tool that your group used that was not required?",
     paragraph: (
@@ -1036,6 +1113,7 @@ blogPostDataMap.set("final", [
     ),
   },
   {
+    id: 8,
     heading:
       "If you could change one thing about the course, what would it be?",
     paragraph: (
@@ -1050,6 +1128,7 @@ blogPostDataMap.set("final", [
 
 blogPostDataMap.set("ethics", [
   {
+    id: 0,
     heading: "I am responding to the prompt The Suggestion Box",
     paragraph: (
       <>

@@ -7,6 +7,7 @@ import CssBaseline from "@mui/material/CssBaseline";
 import { useMediaQuery } from "@mui/material";
 import { useMemo } from "react";
 import { Header } from "./shared/components/Header";
+import HomeComponent from "./pages/home/Home";
 
 function App() {
   const prefersDarkMode = useMediaQuery("(prefers-color-scheme: dark)");
@@ -16,6 +17,9 @@ function App() {
       createTheme({
         palette: {
           mode: prefersDarkMode ? "dark" : "light",
+          primary: {
+            main: "#4392f9",
+          },
         },
       }),
     [prefersDarkMode]
@@ -25,11 +29,13 @@ function App() {
     <ThemeProvider theme={theme}>
       <CssBaseline />
       <Header></Header>
-      <Routes>
-        <Route path="/" element={<></>}></Route>
-        <Route path="/blogs/*" element={<BlogTopics />}></Route>
-        <Route path="/projects/*" element={<Projects />}></Route>
-      </Routes>
+      <main>
+        <Routes>
+          <Route path="/" element={<HomeComponent />}></Route>
+          <Route path="/blogs/*" element={<BlogTopics />}></Route>
+          <Route path="/projects/*" element={<Projects />}></Route>
+        </Routes>
+      </main>
     </ThemeProvider>
   );
 }

@@ -8,9 +8,9 @@ export const BlogHeader: React.FC<BlogHeaderProps> = ({
   title,
 }: BlogHeaderProps) => {
   return (
-    <header>
-      <h2 style={{ margin: "0" }}>{title}</h2>
-    </header>
+    <div className="blog-title">
+      <h1 style={{ margin: "0" }}>{title}</h1>
+    </div>
   );
 };
 

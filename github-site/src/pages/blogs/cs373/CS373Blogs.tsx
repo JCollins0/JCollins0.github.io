@@ -1,31 +1,7 @@
 import { Route, Routes } from "react-router-dom";
-import myImage from "../../../assets/images/jonathan.jpg";
-import { BlogFooter, BlogHeader } from "../BlogsCommon";
-import { blogPostDataMap, BlogPostData } from "./BlogData";
-import "./blogs.scss";
-
-type BlogProps = {
-  title: string;
-  date: string;
-  data: BlogPostData;
-};
-type BlogComponent = React.FC<BlogProps>;
-
-const BlogPost: BlogComponent = ({ title, date, data }: BlogProps) => {
-  return (
-    <div className="content">
-      <h1 className="title">{title}</h1>
-      <p className="date">{date}</p>
-      <img src={myImage} alt="jonathan" className="my-image"></img>
-      {data.map(({ heading, paragraph }) => (
-        <div key={heading}>
-          <h2 className="heading">{heading}</h2>
-          <p className="paragraph">{paragraph}</p>
-        </div>
-      ))}
-    </div>
-  );
-};
+import { BlogFooter } from "../BlogsCommon";
+import { blogPostDataMap } from "./CS373BlogData";
+import { BlogPost } from "../../../shared/components/BlogPost";
 
 export const cs373BlogData = [
   {
@@ -116,18 +92,16 @@ export const CS373Blogs: React.FC = () => {
               ...blogPage,
               element: (
                 <div className="fade-in">
-                  <BlogHeader title="CS373 Fall 2018" />
-                  <main>
-                    {blogPostDataMap.has(blogPage.path) ? (
-                      <BlogPost
-                        title={blogPage.text}
-                        date={blogPage.date}
-                        data={blogPostDataMap.get(blogPage.path) ?? []}
-                      />
-                    ) : (
-                      <></>
-                    )}
-                  </main>
+                  {blogPostDataMap.has(blogPage.path) ? (
+                    <BlogPost
+                      title={blogPage.text}
+                      date={blogPage.date}
+                      showImage={true}
+                      data={blogPostDataMap.get(blogPage.path) ?? []}
+                    />
+                  ) : (
+                    <></>
+                  )}
                   <BlogFooter backToText="Back to CS373 Blogs" />
                 </div>
               ),

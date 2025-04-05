@@ -1,7 +1,22 @@
+body {
+  --link-color: #4392f9;
+}
+
 * {
   font-family: Corbel, sans-serif;
 }
 
-a {
+a,
+a:hover {
+  color: var(--link-color);
   text-decoration: none;
+}
+
+.wrapper {
+  max-width: 50%;
+  margin: auto;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }

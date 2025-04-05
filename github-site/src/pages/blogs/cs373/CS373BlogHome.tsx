@@ -1,6 +1,5 @@
 import { Link, Route, Routes, useResolvedPath } from "react-router-dom";
-import { cs373BlogData, CS373Blogs } from "./Blogs";
-import "./blog-home.scss";
+import { cs373BlogData, CS373Blogs } from "./CS373Blogs";
 import { BlogFooter, BlogHeader } from "../BlogsCommon";
 
 export const CS373BlogHome: React.FC = () => {
@@ -12,8 +11,8 @@ export const CS373BlogHome: React.FC = () => {
         element={
           <div className="blogs-container">
             <BlogHeader title="CS373 Fall 2018" />
-            <div className="wrapper">
-              <h1>Blogs</h1>
+            <div className="blog-wrapper">
+              <h2>Blogs</h2>
               <ul>
                 {cs373BlogData.map((blogPage) => (
                   <li key={blogPage.path} className="blog-item">
