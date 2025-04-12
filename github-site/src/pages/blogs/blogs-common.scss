@@ -1,6 +1,35 @@
 @use "../../assets/styles/utils.scss";
 
 .blogs-container {
+  .blog-wrapper {
+    width: 300px;
+    margin: auto;
+    display: block;
+    text-align: center;
+
+    ul {
+      padding: 0;
+      display: grid;
+      gap: 1rem;
+
+      .blog-topic-item {
+        list-style: none;
+        p {
+          margin-bottom: 0;
+        }
+
+        a.transitioning {
+          view-transition-name: blog-title;
+          contain: layout;
+        }
+      }
+
+      .back-to {
+        margin-top: 20px;
+      }
+    }
+  }
+
   .content {
     max-width: calc(800px - (30px * 2));
     margin-right: auto;
@@ -63,4 +92,20 @@
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
+}
+
+::view-transition-old(root) {
+  animation: none;
+}
+
+::view-transition-new(root) {
+  animation: none;
+}
+
+::view-transition-old(blog-title) {
+  animation: dissappearTop 0.2s ease forwards;
+}
+
+::view-transition-new(blog-title) {
+  animation: appearBottom 0.2s ease forwards;
 }

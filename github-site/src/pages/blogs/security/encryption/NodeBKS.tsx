@@ -12,7 +12,7 @@ const blogData: BlogPostData = [
     id: 0,
     heading: "What does it do?",
     paragraph: (
-      <p>
+      <>
         The library provides a simple API for reading Bouncy Castle keystore
         files.
         <br />
@@ -27,24 +27,24 @@ const blogData: BlogPostData = [
           Here
         </a>
         .
-      </p>
+      </>
     ),
   },
   {
     id: 1,
     heading: 'Why did I "develop" this?',
     paragraph: (
-      <p>
+      <>
         I was looking for a way to read Bouncy Castle keystore files in Node.js
         and couldn't find any library that did it. So I "wrote" my own.
-      </p>
+      </>
     ),
   },
   {
     id: 2,
     heading: "Why do I keep using quotes around certain words?",
     paragraph: (
-      <p>
+      <>
         I did not actually write this library from scratch. I used code from a
         library called pyjks written in Python and I had Microsoft Copilot
         transpile the code to Javascript. I then had to make some changes to the
@@ -55,14 +55,14 @@ const blogData: BlogPostData = [
           Here
         </a>
         .
-      </p>
+      </>
     ),
   },
   {
     id: 3,
     heading: "What were some of the challenges?",
     paragraph: (
-      <p>
+      <>
         The biggest challenge was dealing with the transpilation process to
         Node.js. The library in python had assumed that the bytes were big
         endian and NodeJS only supports little endian by default. This caused a
@@ -70,20 +70,20 @@ const blogData: BlogPostData = [
         the decryption process of encrypted data. I also ran into issues with
         the output format of node-forge and node-crypto libraries as compared to
         the python libraries which pyjks used.
-      </p>
+      </>
     ),
   },
   {
     id: 4,
     heading: "What interesting things did I learn?",
     paragraph: (
-      <p>
+      <>
         I learnt a lot about the Bouncy Castle keystore format and how it works.
         <br />
         Format:
         <br />
         <code>keystore = keystore_header + keystore_content + hmac </code>
-      </p>
+      </>
     ),
   },
 ];

@@ -1,3 +1,4 @@
+import { useMediaQuery } from "@mui/material";
 import myImage from "../../assets/images/jonathan.jpg";
 export type BlogPostData = Array<{
   id: number;
@@ -19,9 +20,19 @@ export const BlogPost: BlogComponent = ({
   data,
   showImage = false,
 }: BlogProps) => {
+  const prefersReducedMotion = useMediaQuery(
+    "(prefers-reduced-motion: reduce)"
+  );
   return (
     <div className="content">
-      <h1 className="title">{title}</h1>
+      <h1
+        style={{
+          viewTransitionName: prefersReducedMotion ? undefined : "blog-title",
+          contain: "layout",
+        }}
+      >
+        {title}
+      </h1>
       <p className="date">{date}</p>
       {showImage && (
         <img src={myImage} alt="jonathan" className="my-image"></img>

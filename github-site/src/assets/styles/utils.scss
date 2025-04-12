@@ -19,3 +19,31 @@
     opacity: 1;
   }
 }
+
+@keyframes appearBottom {
+  0% {
+    opacity: 0;
+    transform: rotateX(100deg);
+    transform-origin: bottom;
+  }
+
+  100% {
+    opacity: 1;
+    transform: rotateX(0);
+    transform-origin: bottom;
+  }
+}
+
+@keyframes dissappearTop {
+  0% {
+    opacity: 1;
+    transform: rotateX(0deg);
+    transform-origin: top;
+  }
+
+  100% {
+    opacity: 0;
+    transform: rotateX(70deg);
+    transform-origin: top;
+  }
+}
