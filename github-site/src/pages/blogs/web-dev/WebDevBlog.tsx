@@ -1,9 +1,12 @@
+import { Typography } from "@mui/material";
+import { BlogHeader } from "../BlogsCommon";
+
 const WebDevBlog: React.FC = () => {
   return (
-    <div className="blogs-container">
+    <div>
+      <BlogHeader title="Web Development Blogs" />
       <div className="blog-wrapper">
-        <h1>Web Development Blogs</h1>
-        <p>Coming soon...</p>
+        <Typography>Coming soon...</Typography>
       </div>
     </div>
   );

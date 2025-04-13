@@ -1,5 +1,5 @@
 body {
-  --link-color: #4392f9;
+  // --link-color: var(--mui-palette-primary-main);
 }
 
 * {
@@ -8,7 +8,7 @@ body {
 
 a,
 a:hover {
-  color: var(--link-color);
+  // color: var(--link-color);
   text-decoration: none;
 }
 

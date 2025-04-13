@@ -1,8 +1,8 @@
-import { Link, useResolvedPath } from "react-router-dom";
+import { NavLink, useResolvedPath } from "react-router-dom";
 import { BlogFooter, BlogHeader } from "../BlogsCommon";
 
 import { routes } from "./routes";
-import { useMediaQuery } from "@mui/material";
+import { Link, Typography, useMediaQuery } from "@mui/material";
 
 const SecurityBlog: React.FC = () => {
   const backToBlogsPath = useResolvedPath("..").pathname;
@@ -13,13 +13,13 @@ const SecurityBlog: React.FC = () => {
     <>
       <BlogHeader title="Security Blogs" />
       <div className="blog-wrapper">
-        <h2>Blogs</h2>
         <ul>
           {routes.map((route) => (
             <li key={route.path} className="blog-topic-item">
               <div>
-                <p>{route.date}</p>
+                <Typography variant="body1">{route.date}</Typography>
                 <Link
+                  component={NavLink}
                   to={route.path}
                   viewTransition={prefersReducedMotion ? undefined : true}
                 >

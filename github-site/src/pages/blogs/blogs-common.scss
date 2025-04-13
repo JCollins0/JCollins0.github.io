@@ -73,16 +73,10 @@
   }
 
   .blog-title {
-    width: auto;
     border-bottom: 1px solid #e8e8e8;
     padding: 0 1rem;
     max-width: calc(800px - (30px * 2));
     margin: auto;
-    font-size: larger;
-
-    h1 {
-      margin: 0;
-    }
   }
 
   footer {
@@ -92,20 +86,4 @@
     padding-top: 1rem;
     padding-bottom: 2rem;
   }
-}
-
-::view-transition-old(root) {
-  animation: none;
-}
-
-::view-transition-new(root) {
-  animation: none;
-}
-
-::view-transition-old(blog-title) {
-  animation: dissappearTop 0.2s ease forwards;
-}
-
-::view-transition-new(blog-title) {
-  animation: appearBottom 0.2s ease forwards;
 }

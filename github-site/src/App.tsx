@@ -1,4 +1,4 @@
-import { Outlet } from "react-router-dom";
+import { Outlet, ScrollRestoration } from "react-router-dom";
 import "./App.scss";
 import { ThemeProvider, createTheme } from "@mui/material/styles";
 import CssBaseline from "@mui/material/CssBaseline";
@@ -12,10 +12,43 @@ function App() {
   const theme = useMemo(
     () =>
       createTheme({
+        cssVariables: true,
         palette: {
           mode: prefersDarkMode ? "dark" : "light",
           primary: {
-            main: "#4392f9",
+            main: prefersDarkMode ? "#4392f9" : "#fff",
+          },
+        },
+        typography: {
+          h1: {
+            fontSize: "2em",
+            marginBlockStart: ".67em",
+          },
+          h2: {
+            fontSize: "1.5em",
+            marginBlock: ".83em",
+          },
+          h3: {
+            fontSize: "1.25em",
+          },
+          h4: {
+            fontSize: "1.125em",
+          },
+          h5: {
+            fontSize: "1em",
+          },
+          h6: {
+            fontSize: "1em",
+          },
+        },
+        components: {
+          MuiLink: {
+            styleOverrides: {
+              root: {
+                textDecoration: "none",
+                color: "#4392f9",
+              },
+            },
           },
         },
       }),
@@ -24,6 +57,7 @@ function App() {
 
   return (
     <ThemeProvider theme={theme}>
+      <ScrollRestoration />
       <CssBaseline />
       <Header></Header>
       <main>

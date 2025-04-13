@@ -1,3 +1,5 @@
+import { Typography } from "@mui/material";
+
 const NotFoundComponent: React.FC = () => {
   return (
     <div
@@ -8,8 +10,8 @@ const NotFoundComponent: React.FC = () => {
         padding: "5rem",
       }}
     >
-      <h1>404 - Not Found</h1>
-      <p>The page you are looking for does not exist.</p>
+      <Typography variant="h1">404 - Not Found</Typography>
+      <Typography>The page you are looking for does not exist.</Typography>
     </div>
   );
 };

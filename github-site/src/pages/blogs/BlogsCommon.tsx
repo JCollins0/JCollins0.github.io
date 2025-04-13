@@ -1,6 +1,7 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import "./blogs-common.scss";
+import { Link, Typography } from "@mui/material";
 
 type BlogHeaderProps = { title: string };
 
@@ -9,7 +10,7 @@ export const BlogHeader: React.FC<BlogHeaderProps> = ({
 }: BlogHeaderProps) => {
   return (
     <div className="blog-title">
-      <h1 style={{ margin: "0" }}>{title}</h1>
+      <Typography variant="h1">{title}</Typography>
     </div>
   );
 };
@@ -22,11 +23,13 @@ export const BlogFooter: React.FC<BlogFooterProps> = ({
 }: BlogFooterProps) => {
   return (
     <footer className="blog-footer">
-      <Link to={to || ".."}>{backToText}</Link>
-      <a href="https://github.com/JCollins0">
+      <Link component={NavLink} to={to || ".."}>
+        {backToText}
+      </Link>
+      <Link href="https://github.com/JCollins0" target="_blank">
         <GitHubIcon />
         JCollins0
-      </a>
+      </Link>
     </footer>
   );
 };

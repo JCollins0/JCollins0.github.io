@@ -1,0 +1,31 @@
+.rand-num {
+  position: absolute;
+  display: block !important;
+  z-index: -1;
+  animation: fall linear infinite;
+}
+
+.rand-num::before {
+  content: "";
+  width: 1rem;
+  height: 10rem;
+  background: linear-gradient(20deg, transparent, #00800080, transparent);
+  position: absolute;
+  transform: translateY(-10rem);
+}
+
+/* Animate falling down from top of the page to bottom */
+@keyframes fall {
+  0% {
+    transform: translateY(-10vh);
+    opacity: 1;
+  }
+  90% {
+    transform: translateY(90vh);
+    opacity: 0.25;
+  }
+  100% {
+    transform: translateY(99vh);
+    opacity: 0;
+  }
+}

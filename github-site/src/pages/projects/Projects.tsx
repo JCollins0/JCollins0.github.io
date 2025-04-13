@@ -1,4 +1,11 @@
-import { Card, CardHeader, CardContent, Typography, Grid } from "@mui/material";
+import {
+  Card,
+  CardHeader,
+  CardContent,
+  Typography,
+  Grid,
+  Link,
+} from "@mui/material";
 import OpenInNewIcon from "@mui/icons-material/OpenInNew";
 import { useEffect, useState } from "react";
 import { fetchProjects, ProjectData } from "../../api/projects";
@@ -13,9 +20,9 @@ const ProjectCard: React.FC<ProjectCardProps> = (props) => {
         title={
           <div className="card-title">
             {props.name}
-            <a href={props.url} target="_blank" rel="noreferrer">
+            <Link href={props.url} target="_blank" rel="noreferrer">
               <OpenInNewIcon />
-            </a>
+            </Link>
           </div>
         }
       ></CardHeader>

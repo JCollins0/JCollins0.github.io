@@ -25,8 +25,8 @@ export const Header: React.FC = () => {
   };
 
   return (
-    <Box sx={{ flexGrow: 1 }}>
-      <AppBar position="static">
+    <Box>
+      <AppBar position="fixed">
         <Toolbar variant="dense">
           <Box sx={{ flexGrow: 1, display: { xs: "flex", sm: "none" } }}>
             <IconButton
@@ -81,14 +81,14 @@ export const Header: React.FC = () => {
             <Typography
               key={route.to}
               variant="h6"
-              color="inherit"
+              // color="inherit"
               component="div"
               sx={{
                 display: { xs: "none", sm: "flex" },
                 mr: 2,
                 fontWeight: 700,
                 letterSpacing: ".3rem",
-                color: "inherit",
+                // color: "inherit",
                 textDecoration: "none",
               }}
             >

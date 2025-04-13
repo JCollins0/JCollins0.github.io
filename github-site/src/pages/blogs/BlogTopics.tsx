@@ -1,14 +1,17 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { topics } from "./routes";
+import { Link, Typography } from "@mui/material";
 
 export const BlogTopics: React.FC = () => {
   return (
     <div className="blog-wrapper">
-      <h1>Blogs</h1>
+      <Typography variant="h1">Blogs</Typography>
       <ul>
         {topics.map((topic) => (
           <li key={topic.path} className="blog-topic-item">
-            <Link to={topic.to}>{topic.text}</Link>
+            <Link component={NavLink} to={topic.to}>
+              {topic.text}
+            </Link>
           </li>
         ))}
       </ul>

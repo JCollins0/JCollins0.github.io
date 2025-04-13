@@ -1,3 +1,4 @@
+import { Link } from "@mui/material";
 import { BlogPostData } from "../../../shared/components/BlogPost";
 
 export const blogPostDataMap = new Map<String, BlogPostData>();
@@ -73,10 +74,14 @@ blogPostDataMap.set("week1", [
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
-        My pick-of-the-week is <a href="https://atom.io/">Atom</a>. It is the
-        code editor made by Github, so it interacts nicely there, and has many
-        plugins that are useful. I am using atom to write this blog currently
-        and have used it in many other CS classes as a universal text editor.
+        My pick-of-the-week is{" "}
+        <Link href="https://atom.io/" target="_blank">
+          Atom
+        </Link>
+        . It is the code editor made by Github, so it interacts nicely there,
+        and has many plugins that are useful. I am using atom to write this blog
+        currently and have used it in many other CS classes as a universal text
+        editor.
       </>
     ),
   },
@@ -110,8 +115,8 @@ blogPostDataMap.set("week2", [
         tools are not designed for Windows, so even if there is a port, it is
         not executed the same way as the original. For example, I had installed
         'Gnu Make' for windows so that if I developed C code I could compile it
-        using a makefile, but the command that it uses is \"mingw32-make\" which
-        I aliased to 'make' so that it would function the same as make. A lot of
+        using a makefile, but the command that it uses is "mingw32-make" which I
+        aliased to 'make' so that it would function the same as make. A lot of
         extra work for something simple, but that's Windows for you.
       </>
     ),
@@ -147,13 +152,18 @@ blogPostDataMap.set("week2", [
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
-        My pick-of-the-week is <a href="http://flask.pocoo.org/">Flask</a>.
-        Flask is a micro web framework written in Python that is very useful for
-        creating web server architecture with Python as the backend. I've used
-        it this weekend to create a web application to scrape data from the
+        My pick-of-the-week is{" "}
+        <Link href="http://flask.pocoo.org/" target="_blank">
+          Flask
+        </Link>
+        . Flask is a micro web framework written in Python that is very useful
+        for creating web server architecture with Python as the backend. I've
+        used it this weekend to create a web application to scrape data from the
         university dining hall menus and present the data in a much more useful
-        view than what the university has to offer(in my opinion). Check it out
-        <a href="https://github.com/JCollins0/MenuProject">Here</a>
+        view than what the university has to offer(in my opinion). Check it out{" "}
+        <Link href="https://github.com/JCollins0/MenuProject" target="_blank">
+          Here
+        </Link>
       </>
     ),
   },
@@ -291,13 +301,15 @@ blogPostDataMap.set("week4", [
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
-        My pick of the week is
-        <a href="https://www.texstudio.org/">TexStudio</a>. TexStudio is a LaTeX
-        editor that has auto complete, an integrated PDF viewer, spell checking,
-        word frequency checking, inline formula previewing, syntax highlighting,
-        and much much more. I find TexStudio to be better than most editors that
-        I have used before, especially online editors. The autocomplete prety
-        much puts it over the top for me.
+        My pick of the week is{" "}
+        <Link href="https://www.texstudio.org/" target="_blank">
+          TexStudio
+        </Link>
+        . TexStudio is a LaTeX editor that has auto complete, an integrated PDF
+        viewer, spell checking, word frequency checking, inline formula
+        previewing, syntax highlighting, and much much more. I find TexStudio to
+        be better than most editors that I have used before, especially online
+        editors. The autocomplete prety much puts it over the top for me.
       </>
     ),
   },
@@ -369,13 +381,15 @@ blogPostDataMap.set("week5", [
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
-        My pick of the week is
-        <a href="https://calendar.google.com/">Google Calendar</a>. I use Google
-        Calendar for any and all of my events. It keeps me organized, and is
-        especially nice with my Pixel phone as it shows my next/current event at
-        the top of my home/lock screen which is good for an at a glance. They
-        recently revamped their web UI to look more like the app, so it is very
-        clean.
+        My pick of the week is{" "}
+        <Link href="https://calendar.google.com/" target="_blank">
+          Google Calendar
+        </Link>
+        . I use Google Calendar for any and all of my events. It keeps me
+        organized, and is especially nice with my Pixel phone as it shows my
+        next/current event at the top of my home/lock screen which is good for
+        an at a glance. They recently revamped their web UI to look more like
+        the app, so it is very clean.
       </>
     ),
   },
@@ -447,14 +461,17 @@ blogPostDataMap.set("week6", [
     heading: "What's my pick-of-the-week or tip-of-the-week?",
     paragraph: (
       <>
-        My pick-of-the-week is
-        <a href="https://winscp.net/">WinSCP</a>. WinSCP is a file transfer tool
-        that uses SSH connections and allows you to access the remote file
-        system. It is very similar to the sshfs linux package. The default
-        editor that WinSCP comes with is similar to notepad, but you can change
-        that to allow you to open the files in any editor that you want. For me
-        that's Atom and it works great; I can have syntax highlighting and
-        formatting and then Ctrl+S to save it on the remote server.
+        My pick-of-the-week is{" "}
+        <Link href="https://winscp.net/" target="_blank">
+          WinSCP
+        </Link>
+        . WinSCP is a file transfer tool that uses SSH connections and allows
+        you to access the remote file system. It is very similar to the sshfs
+        linux package. The default editor that WinSCP comes with is similar to
+        notepad, but you can change that to allow you to open the files in any
+        editor that you want. For me that's Atom and it works great; I can have
+        syntax highlighting and formatting and then Ctrl+S to save it on the
+        remote server.
       </>
     ),
   },
@@ -525,11 +542,13 @@ blogPostDataMap.set("week7", [
     paragraph: (
       <>
         My pick-of-the-week is the{" "}
-        <a href="https://www.chick-fil-a.com/One">Chic-fil-A One App</a>. If you
-        didn't know the Chic-fil-A on MLK gives away free food on the app all
-        the time. If you love Chic-fil-A like me then you will want to use this
-        app. I have gotten so much free food from them, plus if you mobile order
-        you get even more free food.
+        <Link href="https://www.chick-fil-a.com/One" target="_blank">
+          Chic-fil-A One App
+        </Link>
+        . If you didn't know the Chic-fil-A on MLK gives away free food on the
+        app all the time. If you love Chic-fil-A like me then you will want to
+        use this app. I have gotten so much free food from them, plus if you
+        mobile order you get even more free food.
       </>
     ),
   },

@@ -2,6 +2,7 @@ import { useResolvedPath } from "react-router-dom";
 import { BlogPost, BlogPostData } from "../../../../shared/components/BlogPost";
 import { BlogFooter } from "../../BlogsCommon";
 import nodebks from "../../../../assets/images/nodebks.jpg";
+import { Link } from "@mui/material";
 
 const blogData: BlogPostData = [
   {
@@ -17,15 +18,15 @@ const blogData: BlogPostData = [
         files.
         <br />
         Find the source code{" "}
-        <a target="_blank" href="https://github.com/JCollins0/node-bks">
+        <Link href="https://github.com/JCollins0/node-bks" target="_blank">
           Here
-        </a>
+        </Link>
         <br />
         It is not intended to replace bouncy castle as a whole. You can read
         more about bouncy castle{" "}
-        <a target="_blank" href="https://bouncycastle.org/">
+        <Link href="https://bouncycastle.org/" target="_blank">
           Here
-        </a>
+        </Link>
         .
       </>
     ),
@@ -51,9 +52,9 @@ const blogData: BlogPostData = [
         code to get it to work.
         <br />
         Find the python library{" "}
-        <a target="_blank" href="https://pypi.org/project/pyjks/">
+        <Link href="https://pypi.org/project/pyjks/" target="_blank">
           Here
-        </a>
+        </Link>
         .
       </>
     ),
